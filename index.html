@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/customParseFormat.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/advancedFormat.js"></script>
     <title>Bakare</title>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -15,14 +13,14 @@
         <a href="#">Bakare Samuel Oluwadamilola</a>
       </div>
       <div class="links">
-        <a href="#">LinkedIn</a>
-        <a href="#">Github</a>
-        <a href="#">Public Resume</a>
-        <a href="#">Medium</a>
-        <a href="#">Hashnode</a>
-        <a href="#">Contact</a>
+        <a href="https://www.linkedin.com/in/itsxdamdam/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/itsxdamdam" target="_blank">Github</a>
+        <a href="#" target="_blank">Public Resume</a>
+        <a href="https://damibakare.medium.com/" target="_blank">Medium</a>
+        <a href="https://damibakare.hashnode.dev/" target="_blank">Hashnode</a>
       </div>
     </nav>
+    <p class="text-intro">My name is Bakare Samuel Oluwadamilola.<br> A software Engineer passionate about building timely and scalable solutions by building services that allows seamless interactions with data and presenting data with visually appealing user interfaces.</p>
     <div class="wrapper">
       <div class="container">
         <div>
@@ -49,8 +47,14 @@
     <script src="hoverslide.js"></script>
 
     <script>
-     const now = dayjs.format("MM-DD-YYYY", "hh:mm A");
-     console.log(now)
+      // dayjs.extend(dayjs_plugin_customParseFormat);
+      // dayjs.extend(dayjs_plugin_advancedFormat);
+
+      const now = dayjs().format("MM-DD-YYYY hh:mm A");
+
+      const getDateTime = document.querySelector(".date-time");
+      
+     getDateTime.innerHTML = now
     </script>
   </body>
 </html>
