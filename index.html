@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>damibakare</title>
-  <style>
-    body {
-      background-color: 	#E5E4E2;
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/customParseFormat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/advancedFormat.js"></script>
+    <title>Bakare</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#">Bakare Samuel Oluwadamilola</a>
+      </div>
+      <div class="links">
+        <a href="#">LinkedIn</a>
+        <a href="#">Github</a>
+        <a href="#">Public Resume</a>
+        <a href="#">Medium</a>
+        <a href="#">Hashnode</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <div class="container">
+        <div>
+          <a href="#" class="text">Creative</a>
+        </div>
+        <div>
+          <a href="#" class="text">Servant leader</a>
+        </div>
+        <div>
+          <a href="#" class="text">Software Engineer</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="main">
+        <a href="#">bakareayomiku@gmail.com</a>
+      </div>
+      <div class="location">
+        <p>Lagos, Nigeria</p>
+        <p class="date-time">default</p>
+      </div>
+    </footer>
 
-    div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 500px;
-    }
-    div h3{
-      text-align: center;
-      width: 200px;
-    }
+    <script src="hoverslide.js"></script>
 
-    img {
-      display: block;
-      width: 500px;
-    }
-
-    @media screen and (min-width: 300px) {
-      img {
-        width: 300px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div>
-    <h3>Oops :)</h3>
-    <img src="./men-at-wor.gif" alt="">
-  </div>
-    
-</body>
+    <script>
+     const now = dayjs.format("MM-DD-YYYY", "hh:mm A");
+     console.log(now)
+    </script>
+  </body>
 </html>
