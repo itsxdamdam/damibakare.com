@@ -36,11 +36,11 @@ nav a, footer a {
   position: fixed;
   top: 50px;
   width: 40%;
-  
+  font-size: 14px;
   text-wrap: wrap;
   font-family: "Roboto", system-ui;
   padding: 0 2.5em;
-  color: #f8f8f8;
+  color: #ff0000;
 
 }
 
@@ -200,10 +200,6 @@ div {
   .text-intro {
     width: 400px;
     padding: 1.5em;
-    font-family: "Roboto", system-ui;
-    /* padding: 0 2.5em; */
-    color: #000;
-  
   }
 
   .wrapper {
