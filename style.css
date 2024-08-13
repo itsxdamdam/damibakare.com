@@ -200,7 +200,7 @@ div {
   }
 
   .text-intro {
-    width: 400px;
+    max-width: 300px;
     padding: 1.5em;
   }
 
