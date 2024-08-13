@@ -35,7 +35,7 @@ nav a, footer a {
   position: fixed;
   top: 50px;
   width: 40%;
-
+  line
   text-wrap: wrap;
   font-family: "Roboto", system-ui;
   padding: 0 2.5em;
@@ -83,6 +83,17 @@ nav a, footer a {
   overflow: hidden;
   text-transform: uppercase;
   height: 120px;
+  color: #222222;
+}
+
+.text-name {
+  text-decoration: none;
+  font-family: "Roboto", system-ui;
+  font-size: 50px;
+  font-weight: bolder;
+  line-height: 50px;
+  text-transform: uppercase;
+  height: 50px;
   color: #222222;
 }
 
