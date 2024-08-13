@@ -8,11 +8,12 @@
 
 body {
   background: #cdea67;
+  height: 100vh;
 }
 
 nav {
   position: fixed;
-  top: 2;
+  top: 2px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -35,7 +36,7 @@ nav a, footer a {
   position: fixed;
   top: 50px;
   width: 40%;
-  line
+  
   text-wrap: wrap;
   font-family: "Roboto", system-ui;
   padding: 0 2.5em;
@@ -97,6 +98,10 @@ nav a, footer a {
   color: #222222;
 }
 
+.hide {
+  display: none;
+}
+
 .date-time {
   font-family: "Roboto", system-ui;
 }
@@ -107,8 +112,8 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 2em;
-  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 0.5em;
+  border-top: 2px solid rgba(0, 0, 0, 0.25);
 }
 
 div {
@@ -170,3 +175,34 @@ div {
   transition-delay: 0.33s;
 }
 
+@media only screen and (max-width:600px) {
+  nav {
+    width: 400px;
+    padding: 1em;
+  }
+
+  .text-intro {
+    width: 400px;
+    padding: 1.5em;
+    font-family: "Roboto", system-ui;
+    /* padding: 0 2.5em; */
+    color: #000;
+  
+  }
+
+  .wrapper {
+    height: 70vh;
+  }
+
+  .container {
+    width: 90%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .text {
+    font-size: 35px;
+    text-align: left;
+    height: 90px;
+    color: #222222;
+  }
+}

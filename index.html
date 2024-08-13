@@ -24,7 +24,7 @@
     <div class="wrapper">
       <div class="container">
         <div>
-          <a href="#" class="text-name">Bakare Samuel Oluwadamilola</a>
+          <!-- <a href="#" class="text-name">Bakare Samuel Oluwadamilola</a> -->
         </div>
         <div>
           <a href="#" class="text">Creative</a>
@@ -50,14 +50,21 @@
     <script src="hoverslide.js"></script>
 
     <script>
-      // dayjs.extend(dayjs_plugin_customParseFormat);
-      // dayjs.extend(dayjs_plugin_advancedFormat);
-
       const now = dayjs().format("MM-DD-YYYY hh:mm A");
 
       const getDateTime = document.querySelector(".date-time");
       
      getDateTime.innerHTML = now
+
+     if(screen.width <= 600) {
+      const getLinks = document.querySelectorAll(".links a");
+      for(let i = 0; i < getLinks.length; i++) {
+        if(getLinks[i].innerHTML !== "Public Resume") {
+          const element = getLinks[i]
+          element.classList.add("hide")
+        }
+      }
+     }
     </script>
   </body>
 </html>
