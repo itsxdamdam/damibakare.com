@@ -37,7 +37,7 @@
         </div>
       </div>
     </div>
-    <footer>
+    <footer class="footer">
       <div class="main">
         <a href="#">bakareayomiku@gmail.com</a>
       </div>
@@ -54,7 +54,7 @@
 
       const getDateTime = document.querySelector(".date-time");
       
-     getDateTime.innerHTML = now
+      getDateTime.innerHTML = now
 
      if(screen.width <= 600) {
       const getLinks = document.querySelectorAll(".links a");
@@ -64,6 +64,21 @@
           element.classList.add("hide")
         }
       }
+
+      const bottomLinks = document.createElement("div");
+
+      bottomLinks.classList.add("bottom-links");
+
+      bottomLinks.innerHTML = `
+        <a href="https://www.linkedin.com/in/itsxdamdam/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/itsxdamdam" target="_blank">Github</a>
+        <a href="https://damibakare.medium.com/" target="_blank">Medium</a>
+        <a href="https://damibakare.hashnode.dev/" target="_blank">Hashnode</a>
+      `;
+      document.body.appendChild(bottomLinks);
+      const footer = document.querySelector(".footer");
+      bottomLinks.before(footer)
+      console.log(bottomLinks)
      }
     </script>
   </body>
