@@ -108,7 +108,7 @@ nav a, footer a {
 
 .bottom-links {
   position: fixed;
-  bottom: 40px;
+  bottom: 10%;
   width: 90%;
   display: flex;
   justify-content: center;
@@ -117,8 +117,9 @@ nav a, footer a {
 
 .bottom-links a {
   text-decoration: none;
-  color: #000;
-  padding: 0.5em;
+  color: #0f0f0f;
+  font-family: "Roboto", system-ui;
+  padding: 0 1em;
 }
 
 footer {
