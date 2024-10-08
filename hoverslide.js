@@ -18,3 +18,8 @@ elements.forEach((element) => {
   element.appendChild(textContainer.cloneNode(true));
 
 });
+
+// Replace key_live_YOUR_KEY_GOES_HERE with your Branch Key (live version)
+branch.init("key_live_nxo5ohAr97tTai4YkqltPogiDrfs3UEP", function(err, data) {
+	console.log(err, data);
+});
